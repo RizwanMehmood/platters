@@ -1864,7 +1864,7 @@ div.ppt { display:none !important; }
 	border-radius: 50px;
 }
 
-.footer .footer-copyright { padding-top: 40px; border-top: 1px solid #ddd; }
+.footer .footer-copyright { padding-top: 40px;}
 .foot-error .footer-copyright { padding-top: 0; border-top: 0; }
  
 .footer .footer-copyright p {
