@@ -131,16 +131,14 @@
 
 
 			<div class="tp-banner-container">
-			<section id="home">
+			<section id="home" style="background-color:#000;">
 				<div class="tp-banner" >
 					<ul>	<!-- SLIDE  -->
 						<li data-transition="fade" data-slotamount="7" data-masterspeed="1500" >
 							<!-- MAIN IMAGE -->
 							<img src="assets/img/slider/slide2.jpg"  alt=""  data-bgfit="cover" data-bgposition="center bottom" data-bgrepeat="no-repeat">
 							
-							<!-- LAYERS -->
-							<!-- LAYER NR. 1 -->
-							<div class="tp-caption lfl largeblackbg br-red"
+						<!-- 	<div class="tp-caption lfl largeblackbg br-red"
 								data-x="20" 
 								data-y="100"
 								data-speed="1500"
@@ -150,7 +148,7 @@
 								data-endeasing="Power4.easeIn"
 								style="z-index: 3">We Make Delicious...
 							</div>
-							<!-- LAYER NR. 2.0 -->
+							
 							<div class="tp-caption lfl medium_bg_darkblue br-green"
 								data-x="20"
 								data-y="200"
@@ -161,7 +159,7 @@
 								data-endeasing="Power4.easeIn"
 								data-captionhidden="off">Consectetur Adipisicing
 							</div>
-							<!-- LAYER NR. 2.1 -->
+							
 							<div class="tp-caption lfl medium_bg_darkblue br-lblue"
 								data-x="20" 
 								data-y="250"
@@ -172,7 +170,7 @@
 								data-endeasing="Power4.easeIn"
 								style="z-index: 3">Sed do Seusmod
 							</div>
-							<!-- LAYER NR. 2.2 -->
+							
 							<div class="tp-caption lfl medium_bg_darkblue br-purple"
 								data-x="20" 
 								data-y="300"
@@ -183,7 +181,7 @@
 								data-endeasing="Power4.easeIn"
 								style="z-index: 3">Incididunt ut Labore
 							</div>
-							<!-- LAYER NR. 2.3 -->
+							
 							<div class="tp-caption lfl medium_bg_darkblue br-orange"
 								data-x="20" 
 								data-y="350"
@@ -194,7 +192,7 @@
 								data-endeasing="Power4.easeIn"
 								style="z-index: 3">Excepteur Sint 
 							</div>
-							<!-- LAYER NR. 3.0 -->
+							
 							<div class="tp-caption customin customout"
 								data-x="right" data-hoffset="-50"
 								data-y="100"
@@ -206,7 +204,7 @@
 								data-endspeed="300"
 								style="z-index: 5"><img class="slide-img img-responsive" src="assets/img/slider/s21.png" alt="" />
 							</div>
-							<!-- LAYER NR. 3.1 -->
+							
 							<div class="tp-caption customin customout"
 								data-x="right" data-hoffset="-120"
 								data-y="130"
@@ -218,7 +216,7 @@
 								data-endspeed="300"
 								style="z-index: 6"><img class="slide-img img-responsive" src="assets/img/slider/s22.png" alt="" />
 							</div>
-							<!-- LAYER NR. 3.2 -->
+							
 							<div class="tp-caption customin customout"
 								data-x="right" data-hoffset="-10"
 								data-y="160"
@@ -230,7 +228,7 @@
 								data-endspeed="300"
 								style="z-index: 7"><img class="slide-img img-responsive" src="assets/img/slider/s23.png" alt="" />
 							</div>
-							<!-- LAYER NR. 3.3 -->
+							
 							<div class="tp-caption customin customout"
 								data-x="right" data-hoffset="-80"
 								data-y="190"
@@ -241,15 +239,12 @@
 								data-easing="Power3.easeInOut"
 								data-endspeed="300"
 								style="z-index: 8"><img class="slide-img img-responsive" src="assets/img/slider/s24.png" alt="" />
-							</div>
+							</div> -->
 						</li>
-						<li data-transition="zoomin" data-slotamount="6" data-masterspeed="400" >
-							<!-- MAIN IMAGE -->
-							<img src="assets/img/slider/transparent.png" style="background-color:#fff" alt=""  data-bgfit="cover" data-bgposition="center bottom" data-bgrepeat="no-repeat">
-							
-							<!-- LAYERS -->
-							<!-- LAYER NR. 1 -->
-							<div class="tp-caption sfl modern_medium_light"
+						<li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="1500" >
+							<img src="assets/img/slider/cover01.jpg"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" alt=""/>
+														
+							<!-- <div class="tp-caption sfl modern_medium_light"
 								data-x="20" 
 								data-y="90"
 								data-speed="800"
@@ -259,7 +254,7 @@
 								data-endeasing="Power4.easeIn"
 								style="z-index: 3">The New
 							</div>
-							<!-- LAYER NR. 1.1 -->
+							
 							<div class="tp-caption large_bold_grey heading customin customout"
 								data-x="10"
 								data-y="125"
@@ -276,7 +271,7 @@
 								data-captionhidden="on"
 								style="z-index:5">CakeFactory
 							</div>
-							<!-- LAYER NR. 2 -->
+							
 							<div class="tp-caption customin customout"
 								data-x="right" 
 								data-y="100"
@@ -289,7 +284,7 @@
 								data-endeasing="Power4.easeIn"
 								style="z-index: 3"><img class="img-responsive" src="assets/img/slider/s11.png" alt="" />
 							</div>
-							<!-- LAYER NR. 2.1 -->
+							
 							<div class="tp-caption customin customout"
 								data-x="right" 
 								data-y="100"
@@ -302,7 +297,7 @@
 								data-endeasing="Power4.easeIn"
 								style="z-index: 3"><img class="img-responsive" src="assets/img/slider/s12.png" alt="" />
 							</div>
-							<!-- LAYER NR. 2.2 -->
+							
 							<div class="tp-caption customin customout"
 								data-x="right" 
 								data-y="100"
@@ -315,7 +310,7 @@
 								data-endeasing="Power4.easeIn"
 								style="z-index: 3"><img class="img-responsive" src="assets/img/slider/s13.png" alt="" />
 							</div>
-							<!-- LAYER NR. 2.3 -->
+							
 							<div class="tp-caption sft"
 								data-x="right" data-hoffset="-400"
 								data-y="80"
@@ -326,7 +321,7 @@
 								data-endeasing="Power4.easeIn"
 								style="z-index: 10"><span class="price-tag br-white">30%<br />Off</span>
 							</div>
-							<!-- LAYER NR. 3 -->
+							
 							<div class="tp-caption finewide_verysmall_white_mw paragraph customin customout tp-resizeme"
 								data-x="20"
 								data-y="210" 
@@ -342,7 +337,7 @@
 								data-endspeed="300"
 								style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap;">Lorem ipsum dolor sit amet, consetetur<br/>  sadipscing elitr, sed diam nonumy<br/>  eirmod tempor invidunt ut labore et<br/>  dolore magna aliquyam erat, sed diam <br/> voluptua. At vero eos et accusam.
 							</div>
-							<!-- LAYER NR. 4 -->
+							
 							<div class="tp-caption sfb"
 								data-x="20" 
 								data-y="335"
@@ -352,7 +347,7 @@
 								data-endspeed="500"
 								data-endeasing="Power4.easeIn"
 								style="z-index: 11"><a class="btn btn-danger" href="#">Download</a> <a class="btn btn-success hidden-xs" href="#">Purchase Now</a>
-							</div>
+							</div> -->
 						</li>
 						<li data-transition="slidehorizontal" data-slotamount="1" data-masterspeed="600" >
 							<!-- MAIN IMAGE -->
@@ -533,9 +528,8 @@
 			<!-- Banner End -->
 			
 			<!-- Inner Content -->
-	<div class="inner-page padd">
-		
-	<section id="HWW" style="padding:0px;">
+	<div class="inner-page padd">	
+	<section id="HWW" style="padding:2%;">
 	  <div class="inner-menu" style="margin-top:0%;">
         <div class="container">
             <div class="row">
@@ -544,24 +538,16 @@
                     <hr class="primary">
                 </div>
             </div>
-        <!-- </div>
-        <div class="container"> -->
             <div class="row">
                 <div class="col-lg-3 col-md-6 text-center">
 					<div class="service-box">
-						<img src="assets/img/searchChef.png" alt=""/>
-						  
+						<img src="assets/img/searchChef.png" alt=""/>  
 					   </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
 					<div class="service-box">
 					<img src="assets/img/select menu.png" alt=""/>
-					
-						<!-- <div class="service-box">
-							<i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
-							<h3>Ready to Ship</h3>
-							<p class="text-muted">You can use this theme as is, or you can make changes!</p> -->
-					 </div> 
+				</div> 
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
 					<div class="service-box">
@@ -628,7 +614,7 @@
 									<!-- Menu list items -->
 									<div class="menu-list-item">
 										<!-- Heading / Dish name -->
-										<a href="#" class="btn btn-primary">View Menus</a>
+										<a href="application/views/Menu.php" class="btn btn-primary">View Menus</a>
 									</div>
 									<!-- Menu list items -->
 									
