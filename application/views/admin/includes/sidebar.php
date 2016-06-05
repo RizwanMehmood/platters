@@ -58,18 +58,55 @@
                             </a>
                             <ul class="sub-menu">
                                 <li class="nav-item  ">
-                                    <a href="components_knob_dials.html" class="nav-link ">
+                                    <a href="<?php echo base_url().'chef/addChef' ?>" class="nav-link ">
                                         <span class="title">Add Chef</span>
                                     </a>
                                 </li>
 								<li class="nav-item  ">
-                                    <a href="components_knob_dials.html" class="nav-link ">
+                                    <a href="<?php echo base_url().'chef/chefList' ?>" class="nav-link ">
                                         <span class="title">Chefs List</span>
                                     </a>
                                 </li>
                             </ul>
                         </li>
-                                              
+                        <li class="nav-item  <?php if($this->uri->segment(1)=='rider') echo 'active open'?>">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-puzzle"></i>
+                                <span class="title">Riders</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="<?php echo base_url().'rider/addRider' ?>" class="nav-link ">
+                                        <span class="title">Add Rider</span>
+                                    </a>
+                                </li>
+								<li class="nav-item  ">
+                                    <a href="<?php echo base_url().'rider/riderList' ?>" class="nav-link ">
+                                        <span class="title">Riders List</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+						<li class="nav-item  <?php if($this->uri->segment(1)=='customer') echo 'active open'?>">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-puzzle"></i>
+                                <span class="title">Customers</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="<?php echo base_url().'customer/addCustomer' ?>" class="nav-link ">
+                                        <span class="title">Add Customer</span>
+                                    </a>
+                                </li>
+								<li class="nav-item  ">
+                                    <a href="<?php echo base_url().'customer/customerList' ?>" class="nav-link ">
+                                        <span class="title">Customer List</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                     <!-- END SIDEBAR MENU -->
                     <!-- END SIDEBAR MENU -->
