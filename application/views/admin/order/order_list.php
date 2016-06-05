@@ -110,5 +110,10 @@
         
         <?php $this->load->view('admin/includes/footer_js');?>
         <!-- BEGIN PAGE LEVEL PLUGINS -->
-		
+		<script src="<?php echo assets_url()?>adminassets/assets/global/plugins/moment.min.js" type="text/javascript"></script>
+        <script src="<?php echo assets_url()?>adminassets/assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.js" type="text/javascript"></script>
+        <script src="<?php echo assets_url()?>adminassets/assets/global/plugins/morris/morris.min.js" type="text/javascript"></script>
+        <script src="<?php echo assets_url()?>adminassets/assets/global/plugins/morris/raphael-min.js" type="text/javascript"></script>
+        <script src="<?php echo assets_url()?>adminassets/assets/global/plugins/counterup/jquery.waypoints.min.js" type="text/javascript"></script>
+        <script src="<?php echo assets_url()?>adminassets/assets/global/plugins/counterup/jquery.counterup.min.js" type="text/javascript"></script>
 		</html>

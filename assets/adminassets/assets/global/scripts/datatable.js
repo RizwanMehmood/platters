@@ -42,6 +42,7 @@ var Datatable = function() {
                 loadingMessage: 'Loading...',
                 dataTable: {
                     "dom": "<'row'<'col-md-8 col-sm-12'pli><'col-md-4 col-sm-12'<'table-group-actions pull-right'>>r><'table-responsive't><'row'<'col-md-8 col-sm-12'pli><'col-md-4 col-sm-12'>>", // datatable layout
+                    "dom": "<'row'<'col-md-8 col-sm-12'pli><'col-md-4 col-sm-12'<'table-group-actions pull-right'>>r><'table-scrollable't><'row'<'col-md-8 col-sm-12'pli><'col-md-4 col-sm-12'>>", // datatable layout
                     "pageLength": 10, // default records per page
                     "language": { // language settings
                         // metronic spesific
@@ -84,6 +85,7 @@ var Datatable = function() {
                                 data[key] = value;
                             });
                             App.blockUI({
+                            Metronic.blockUI({
                                 message: tableOptions.loadingMessage,
                                 target: tableContainer,
                                 overlayColor: 'none',
@@ -94,6 +96,7 @@ var Datatable = function() {
                         "dataSrc": function(res) { // Manipulate the data returned from the server
                             if (res.customActionMessage) {
                                 App.alert({
+                                Metronic.alert({
                                     type: (res.customActionStatus == 'OK' ? 'success' : 'danger'),
                                     icon: (res.customActionStatus == 'OK' ? 'check' : 'warning'),
                                     message: res.customActionMessage,
@@ -117,6 +120,14 @@ var Datatable = function() {
                             }
 
                             App.unblockUI(tableContainer);
+                                $.uniform.update($('.group-checkable', table));
+                            }
+
+                            if (tableOptions.onSuccess) {
+                                tableOptions.onSuccess.call(undefined, the);
+                            }
+
+                            Metronic.unblockUI(tableContainer);
 
                             return res.data;
                         },
@@ -124,16 +135,16 @@ var Datatable = function() {
                             if (tableOptions.onError) {
                                 tableOptions.onError.call(undefined, the);
                             }
-
                             App.alert({
+                            Metronic.alert({
                                 type: 'danger',
                                 icon: 'warning',
                                 message: tableOptions.dataTable.language.metronicAjaxRequestGeneralError,
                                 container: tableWrapper,
                                 place: 'prepend'
                             });
-
                             App.unblockUI(tableContainer);
+                            Metronic.unblockUI(tableContainer);
                         }
                     },
 
@@ -142,6 +153,8 @@ var Datatable = function() {
                             tableInitialized = true; // set table initialized
                             table.show(); // display table
                         }
+
+                        Metronic.initUniform($('input[type="checkbox"]', table)); // reinitialize uniform checkboxes on each table reload
                         countSelectedRecords(); // reset selected records indicator
 
                         // callback for ajax data load
@@ -164,6 +177,8 @@ var Datatable = function() {
             $.fn.dataTableExt.oStdClasses.sWrapper = $.fn.dataTableExt.oStdClasses.sWrapper + " dataTables_extended_wrapper";
             $.fn.dataTableExt.oStdClasses.sFilterInput = "form-control input-xs input-sm input-inline";
             $.fn.dataTableExt.oStdClasses.sLengthSelect = "form-control input-xs input-sm input-inline";
+            $.fn.dataTableExt.oStdClasses.sFilterInput = "form-control input-small input-sm input-inline";
+            $.fn.dataTableExt.oStdClasses.sLengthSelect = "form-control input-xsmall input-sm input-inline";
 
             // initialize a datatable
             dataTable = table.DataTable(options.dataTable);
@@ -188,6 +203,12 @@ var Datatable = function() {
                 $(set).each(function() {
                     $(this).prop("checked", checked);
                 });
+                var set = $('tbody > tr > td:nth-child(1) input[type="checkbox"]', table);
+                var checked = $(this).is(":checked");
+                $(set).each(function() {
+                    $(this).attr("checked", checked);
+                });
+                $.uniform.update(set);
                 countSelectedRecords();
             });
 
