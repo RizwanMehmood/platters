@@ -3,9 +3,10 @@
 <html lang="en">
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <?php $this->load->view('admin/includes/header')?>
-<!-- BEGIN PAGE LEVEL PLUGINS -->
-        <link href="<?php echo assets_url()?>adminassets/assets/global/plugins/datatables/datatables.min.css" rel="stylesheet" type="text/css" />
-        <link href="<?php echo assets_url()?>adminassets/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo assets_url(); ?>adminassets/assets/global/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" type="text/css" href="<?php echo assets_url(); ?>adminassets/assets/global/plugins/datatables/extensions/Scroller/css/dataTables.scroller.min.css"/>
+<link rel="stylesheet" type="text/css" href="<?php echo assets_url(); ?>adminassets/assets/global/plugins/datatables/extensions/ColReorder/css/dataTables.colReorder.min.css"/>
+<link rel="stylesheet" type="text/css" href="<?php echo assets_url(); ?>adminassets/assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css"/>
         <!-- END PAGE LEVEL PLUGINS -->
     <body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white">
         <!-- BEGIN HEADER -->
