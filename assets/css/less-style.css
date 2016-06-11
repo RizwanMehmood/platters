@@ -341,17 +341,17 @@ a:hover {
   border: 1px solid #eeeeee;
 }
 .nav-pills li a:hover {
-  background: #f75353;
+  background: #f05f40;
   color: #ffffff;
-  border-color: #f75353;
+  border-color: #f05f40;
 }
 .nav-pills li.active a {
-  background-color: #f75353;
-  border-color: #f75353;
+  background-color: #f05f40;
+  border-color: #f05f40;
   color: #ffffff;
 }
 .nav-pills li.active a:hover {
-  background-color: #ed4747;
+  background-color: #f05f40;
 }
 /****************/
 /* Progress bar */

@@ -18,7 +18,6 @@ class customer extends CI_Controller {
 	
 	public function customerList()
 	{
-			$this->load->view('admin/customer/customer_list');
-		
+			$this->load->view('admin/customer/customer_list');	
 	}
 }
