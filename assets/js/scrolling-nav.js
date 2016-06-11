@@ -11,9 +11,10 @@ $(window).scroll(function() {
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
-        $('html, body').stop().animate({
+		var newTop = parseFloat($($anchor.attr('href')).css('top')) - 100;
+        $('html, body').animate({
             scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
+        }, 1500);
+        
     });
 });

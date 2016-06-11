@@ -18,7 +18,10 @@ class rider extends CI_Controller {
 	
 	public function riderList()
 	{
-			$this->load->view('admin/rider/rider_list');
+				
+			$result=$this->common_model->find('riders', '*');
+			$data['riders']=$result;
+			$this->load->view('admin/rider/rider_list',$data);
 		
 	}
 }
