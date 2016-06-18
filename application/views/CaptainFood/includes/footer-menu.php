@@ -1,4 +1,4 @@
-<div class="footer padd" style="background-color:#000; ">
+<div class="footer padd" style="background-color:#000;">
 			<div class="container">
 				<div class="footer-copyright">
 					<p style="float:left;font-family: 'Droid Serif', serif;">&copy; Copyright 2016 CAPTAINfood&nbsp;&nbsp;

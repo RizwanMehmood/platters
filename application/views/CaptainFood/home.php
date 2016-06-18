@@ -81,7 +81,7 @@
 				<!-- Banner End -->
 				
 				<!-- Inner Content -->
-		<div class="inner-page padd">
+		<div class="inner-page">
 		
 				<section id="HWW" class="intro-section">
 				  <div class="inner-menu" style="margin-top:0%;">
@@ -93,7 +93,7 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-lg-3 col-md-6 text-center">
+							<div class="col-lg-3 col-md-6">
 								<div class="service-box">
 									<img src="<?php echo base_url()?>assets/img/searchChef.png" alt=""/>  
 								   </div>
@@ -119,12 +119,12 @@
 				   </div>
 				</section>
 
-				<section id="chefs" class="intro-section" style="background-color:#e9e9e9;">
+				<section id="chefs" class="intro-section" style="background-image: url(<?php echo base_url()?>assets/img/menu4.jpg);background-repeat:no-repeat;background-position: center center;background-size: cover; background-attachment:fixed;">
 					<div class="inner-menu" style="margin-top:0%;">
 						<div class="container">
 							<div class="row">
 							 <div class="col-lg-12 text-center">
-								<h1 class="section-heading">Our Super Chefs</h1>
+								<h1 class="section-heading" style="color:#fff;">Our Super Chefs</h1>
 								<hr class="primary">
 							</div>	
 							<?php 
@@ -137,7 +137,7 @@
 										<!-- Menu item heading -->
 										<h3><?php echo $row["Name"]?></h3>
 										<!-- Image for menu list -->
-										<img class="img-responsive" src="<?php echo base_url()?>assets/img/biryani.jpg" alt="" />
+										<img src="<?php echo base_url()?>assets/img/chefIntial.png" alt="" style="border:none;"/>
 										<!-- Menu list items -->
 										<div class="menu-list-item">
 											<!-- Heading / Dish name -->
@@ -180,7 +180,7 @@
 				
 					<!-- Showcase Start -->
 				<section id="about" class="intro-section">
-				  <div class="content" style="margin-top:5%;">
+				  <div class="content">
 					<div class="container clearfix">
 					  <div class="row">
 					  <div class="col-lg-12 text-center">
@@ -189,11 +189,16 @@
 						</div>
 						<br/>
 						<div class="col-md-6"> 
-						  <p class="lead">This can be an about section or anything else ;)</p>
-						  <p>Impossible considered invitation him men instrument saw celebrated unpleasant. Put rest and must set kind next many near nay. He exquisite continued explained middleton am. Voice hours young woody has she think equal. Estate moment he at on wonder at season little. Six garden result summer set family esteem nay estate. End admiration mrs unreserved discovered comparison especially invitation. </p>
-						  <p>Delightful unreserved impossible few estimating men favourable see entreaties. She propriety immediate was improving. He or entrance humoured likewise moderate. Much nor game son say feel. Fat make met can must form into gate. Me we offending prevailed discovery. </p>
+						  <h2 class="lead"><b>Vision</b></h2>
+						  <p>Captain Food is an online homemade food bazaar where you can cook, sell, buy or eat. Empowering citizens by providing them an opportunity to start their own cooking business right from home.</p>
+						  <h2 class="lead"><b>Mission</b></h2>
+						  <p>Captain Food’s mission is to serve freshly cooked homemade food right at your door step. With a number of Super Chefs of your city in our alliance, Captain Food gives you the power to choose, order and eat. Lunch time in offices or whatever the occasion is, order from anywhere because we serve everywhere.</p>
+						  <h2 class="lead"><b>EAT</b></h2>
+						  <p>If you are missing the taste of homemade food, if you want your food to be healthy and hygienic, if regularly eating out is affecting your health, then wait no more. Want your desired food for a day, week or a whole month? You just have to order once.</p>
+						  <h2 class="lead"><b>COOK</b></h2>
+						  <p>Cooking is your passion, make it your profession. Join hands with us and become a Super Chef. You simply cook and earn, while we do the rest.</p>
 						</div>
-						<div class="col-md-5 col-md-offset-1">
+						<div class="col-md-5 col-md-offset-1" style="margin-top:8%;">
 						  <p><img src="<?php echo base_url()?>assets/img/CF.png" alt="" class="img-responsive"></p>
 						</div>
 					  </div>
@@ -202,12 +207,12 @@
 				</section>		
 			
 			<!-- Contact Section -->
-			<section id="contact" style="padding:2%;background-color:#e9e9e9;">
+			<section id="contact" style="background-image: url(<?php echo base_url()?>assets/img/contact1.jpg);background-repeat:no-repeat;background-position: center center;background-size: cover; background-attachment:fixed;padding:2%;">
 				<div class="inner-menu" style="margin-top:5%;">
 					<div class="container">
 						<div class="row">
 						  <div class="col-lg-12 text-center" style="margin-bottom:3%;">
-								<h1 class="section-heading" style="color:#f05f40;">Contact Us</h1>
+								<h1 class="section-heading" style="color:#fff; !Important">Contact Us</h1>
 								<hr class="primary">
 							</div>
 						</div>

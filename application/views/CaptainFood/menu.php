@@ -10,13 +10,14 @@
 		<meta name="author" content="Captain Food">
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
 		<?php $this->load->view('CaptainFood/includes/header')?>
 		
 	</head>
 	
 	<body>
 		<!-- Page Wrapper -->
-		<div class="wrapper">
+		<div class="wrapper" style="heiht:100%">
 			<!-- Header Start -->
 			<div class="header navbar-fixed-top" style="background-color:#000;">
 				<div class="container" style="width:100%;">
@@ -37,44 +38,45 @@
 					</div>
 				</div><!-- / .container -->
 			</div>
-		</div>	
-
 			
-		
 			<!-- Inner Content -->
-	<div class="inner-page padd" style="overflow:hidden;">
+	<div class="inner-page" style="padding-top:20px; background-image: url(<?php echo base_url()?>assets/img/menu/menu7.jpg);background-repeat:no-repeat;background-position: center center;background-size: cover; background-attachment:fixed; width:100%; ">
+	<section style="padding-bottom:0px;">
 	
-	<div style="background: url(<?php echo base_url()?>assets/img/menu-parallax-bg.jpg) no-repeat; background-size: auto 100%;">
-		<div style="padding-left:25%; padding-right:25%; background-color:#e9e9e9 !important">
-		<div class="row" >
-
-					  <div class="col-lg-12 text-center">
-							<h1 class="section-heading">Super Chef 01</h1>
-							<hr class="primary">
-						</div>
-						<br/>
-						<div class="col-md-6"  style="margin-top:5%;"> 
-						  <p class="lead">This can be an about section or anything else ;)</p>
-						  <p>Impossible considered invitation him men instrument saw celebrated unpleasant. Put rest and must set kind next many near nay. He exquisite continued explained middleton am. Voice hours young woody has she think equal. Estate moment he at on wonder at season little. Six garden result summer set family esteem nay estate. End admiration mrs unreserved discovered comparison especially invitation. </p>
-						  <p>Delightful unreserved impossible few estimating men favourable see entreaties. She propriety immediate was improving. He or entrance humoured likewise moderate. Much nor game son say feel. Fat make met can must form into gate. Me we offending prevailed discovery. </p>
-						</div>
-						<div class="col-md-5 col-md-offset-1"  style="margin-top:2%;">
-						  <p><img src="<?php echo base_url()?>assets/img/chef.png" alt="" class="img-responsive"></p>
-						</div>
-		  </div>
+		<div style="margin-top:3%" >
+		<div class="container">
+			<div class="row" style="background-color:#e9e9e9; background: rgba(233, 233, 233, 0.85); height:250px; !important">
+						  <div class="col-lg-12 text-center" style="margin-top:1%">
+								<h2 class="section-heading">Super Chef 01</h2>
+								<hr class="primary">
+								
+							</div>
+							
+							<div class="col-md-3" style="text-align:center"> 
+							  <img src="<?php echo base_url()?>assets/img/chefIntial.png" width="120"; height="120"; style="border-radius:50%;" />
+							  
+							</div>
+							<div class="col-md-9" style="margin-top:2%">
+							<h3 class="section-heading" style="color:#333">I am a very Good Chef. </h3>
+							</div>
+							
+			  
+			</div>
 		</div>
-	</div>
+		</div>
+		
 	
-		<section id="menu" >
 		  <div class="inner-menu">
-			<div class="container">
+			<div class="container" style="padding:10px; background-color:#e9e9e9; background: rgba(233, 233, 233, 0.85); !important">
 				<div class="row">
 					<div class="col-lg-12 text-center">
 						<h1 class="section-heading">Menus</h1>
 						<hr class="primary">
 					</div>
 				</div>
-				<div class="row" style="margin-top:4%;">
+				<?php if($results){?>
+				<div class="row" style="margin:1%">
+				
 					<ul class="nav nav-pills nav-stacked col-md-3 col-sm-3"">
 					<?php $count=0; foreach($results as $row){ ?>
 						<li id="<?php echo $row["menuID"].'_active';?>" <?php if($count==0) { ?> class="active" <?php } ?> ><a href="javascript:HideMe(<?php echo $row["menuID"];?>)">Menu <?php echo $row["menuID"];?></a></li>
@@ -102,7 +104,7 @@
 						<div class="col-md-12" style="margin-top:2%;">
 						<span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
 							<ul class="fa-ul">
-							 <li><i class="fa-li fa fa-square"></i>1 person Serving.</li>
+							 <li><i class="fa-li fa fa-square"></i>1 Person Serving.</li>
 							 <li><i class="fa-li fa fa-square"></i>Package includes Raita,Salad and 2 Roti.</li>
 							 <li><i class="fa-li fa fa-square"></i>Additional Charges apply in case of Extra Roti as Rs.6 per Roti.</li>
 							</ul>
@@ -116,23 +118,37 @@
 					</div>
 					
 				<?php $i++;
-					} ?>					
+					} ?>	
+			
 				</div>
+				<?php }  else {?>
+						<div class="row" style="margin-top:4%; text-align:center">
+						<h3>
+					No Menu Available
+					</h3>
+						<ul class="nav nav-pills nav-stacked col-md-3 col-sm-3">	
+					</ul>
+					<div class="col-md-9" style="height:200px">
+					
+					</div>
+						</div>
+				<?php }?>
 				<!-- <div class="row">
 					<div class="col-md-12">
 						<h2>Per Head Rs.140</h2>
 					</div> -->
 				</div>				
 			</div>
+			</section>
 		   </div>
-		</section>
+		
 	</div>	
 			<!-- Footer Start -->
 			
-			<?php $this->load->view('CaptainFood/includes/footer')?>
+			
 			
 			<!-- Footer End -->
-			
+			<?php $this->load->view('CaptainFood/includes/footer')?>
 		<!-- Scroll to top -->
 		<span class="totop"><a href="#" title="Back to Top"><i class="fa fa-angle-up"></i></a></span> 		
 		
@@ -140,7 +156,8 @@
 		<!-- Javascript files -->
 		<!-- jQuery -->
 		<?php $this->load->view('CaptainFood/includes/footer_js')?>
-		<script>
+		<script src="<?php echo base_url()?>assets/js/star-rating.js" type="text/javascript"></script>	
+	<script>
 		
 		function HideMe(MenuID)
 		{
@@ -152,6 +169,9 @@
 			$("#"+$id).addClass("active");
 		}
 		</script>
-	
+	<script>$(document).on('ready', function(){
+    $('#input-3').rating({displayOnly: true, step: 0.5});
+});
+</script>
 	</body>	
 </html>
