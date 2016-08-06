@@ -17,7 +17,7 @@
 											<li><a <?php if($this->uri->segment(2)=='menu'){?>href="<?php echo base_url()?>"<?php } else {?>href="#home" <?php  }?> class="page-scroll">Home</a></li>
 											
 											<?php if($this->uri->segment(2)=='menu'){?>
-												<li><a href="<?php echo base_url().'Welcome/menu/'.$this->uri->segment(3).'/#menu';?>"
+												<li><a href="<?php echo base_url().'Home/menu/'.$this->uri->segment(3).'/#menu';?>"
 												class="page-scroll"> Menus</a></li>
 												<?php } else{ ?>
 											

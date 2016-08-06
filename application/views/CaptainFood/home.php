@@ -24,7 +24,7 @@
 					<div class="container" style="width:100%;">
 						<div class="row" style="width:100%">
 							<div class="col-md-3 col-sm-3" style="margin-left:3%">
-							<a href="home.php">
+							<a href="<?php echo base_url()?>">
 								<img class="img-responsive" src="<?php echo base_url()?>assets/img/logo final 01.png" width="150px" height="50px" style="margin-top:5%;margin-bottom:5%" alt=""/>
 							</a>
 							</div>
@@ -166,7 +166,7 @@
 										<!-- Menu list items -->
 										<div class="menu-list-item">
 											<!-- Heading / Dish name -->
-											<a href="<?php echo base_url().'Welcome/menu/'.$row["ChefID"]?>" class="btn btn-sm" 
+											<a href="<?php echo base_url().'Home/menu/'.$row["ChefID"]?>" class="btn btn-sm" 
 											style="color:#fff;background-color:#F16521;">View Menus</a>
 										</div>
 									</div>
@@ -218,7 +218,7 @@
 						</div>
 						<div class="row">
 							<div class="col-lg-12">
-								<form name="sentMessage" id="contactForm" novalidate>
+								<form name="sentMessage" id="contactForm" novalidate action="<?php echo base_url()?>Home/SendEmail" method="Post" >
 									<div class="row">
 										<div class="col-md-6">
 											<div class="form-group">
