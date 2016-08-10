@@ -1,4 +1,4 @@
-<div class="col-md-4 col-sm-4" style="overflow:hidden;margin-top:2%;padding:0px;">							<!-- Navigation -->
+<div class="col-md-01 col-sm-4 nav" >							<!-- Navigation -->
 							<nav class="navbar navbar-default navbar-right" style="padding:0px;" role="navigation">
 								<div class="container-fluid">
 									<!-- Brand and toggle get grouped for better mobile display -->

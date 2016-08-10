@@ -25,7 +25,7 @@
 						<div class="row" style="width:100%">
 							<div class="col-md-3 col-sm-3" style="margin-left:3%">
 							<a href="home.php">
-								<img class="img-responsive" src="<?php echo base_url()?>assets/img/logo final 01.png" width="150px" height="50px" style="margin-top:5%;margin-bottom:5%" alt=""/>
+								<img class="img-responsive" src="<?php echo base_url()?>assets/img/logo final 01.png" width="120px" height="50px" style="margin-top:5%;margin-bottom:5%" alt=""/>
 							</a>
 							</div>
 							<?php $this->load->view('CaptainFood/includes/navbar')?>
@@ -83,7 +83,7 @@
 				<!-- Inner Content -->
 		<div class="inner-page">
 		
-				<section id="HWW" class="intro-section">
+				<section id="HWW" >
 				  <div class="inner-menu" style="margin-top:0%;">
 					<div class="container">
 						<div class="row">
@@ -93,7 +93,7 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-lg-3 col-md-6">
+							<div class="col-lg-3 col-md-6 text-center">
 								<div class="service-box">
 									<img src="<?php echo base_url()?>assets/img/searchChef.png" alt=""/>  
 								   </div>
@@ -119,7 +119,7 @@
 				   </div>
 				</section>
 
-				<section id="chefs" class="intro-section" style="background-image: url(<?php echo base_url()?>assets/img/menu4.jpg);background-repeat:no-repeat;background-position: center center;background-size: cover; background-attachment:fixed;">
+				<section id="chefs" style="background-image: url(<?php echo base_url()?>assets/img/menu4.jpg);background-repeat:no-repeat;background-position: center center;background-size: cover; background-attachment:fixed;">
 					<div class="inner-menu" style="margin-top:0%;">
 						<div class="container">
 							<div class="row">
@@ -179,7 +179,7 @@
 					<!-- Inner page menu end -->
 				
 					<!-- Showcase Start -->
-				<section id="about" class="intro-section">
+				<section id="about" >
 				  <div class="content">
 					<div class="container clearfix">
 					  <div class="row">
